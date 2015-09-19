@@ -325,6 +325,16 @@ a:hover {
 	 color: #2c2c2c;
 	 text-decoration: none;
 }
+.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   .fade:hover {
+      opacity: 0.5;
+      }
 .food-details p {
   font-size: 0.95em;
   font-weight: 400;
