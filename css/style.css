@@ -1071,6 +1071,51 @@ span.gall {
 .main-strip h3 {
   font-size: 2.3em;
 }
+    /*gallery*/
+    .gallery-bottom {
+    margin-top: 0;
+}
+   .sap_tabs {
+    clear: both;
+}
+    .resp-tabs-list {
+    padding: 1.5em 9px 1em;
+}
+.resp-tabs-list {
+    list-style: none;
+    padding: 2em 9px 1em;
+    margin: 0 auto;
+}
+    .resp-tab-item {
+    font-size: 15px;
+}
+.resp-tab-active {
+    background: #F5AB95;
+    text-shadow: none;
+    color: #fff;
+    border: 2px solid #F5AB95;
+}
+.resp-tab-item {
+    color: #F5AB95;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 6px 25px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    text-transform: uppercase;
+    border: 2px solid #F5AB95;
+    margin: 0 0.5em 0;
+}
+    
+    
 .food-details h4 {
   font-size: 1.5em;
 }
