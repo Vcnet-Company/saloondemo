@@ -120,6 +120,9 @@ a:hover {
 	line-height:1.6em;
 	margin: 1em 0em;
 }
+.tab_img {
+    padding: 1em 0em;
+}
 .banner-main a {
   font-size: 0.9em;
   font-weight: 400;
@@ -272,6 +275,13 @@ a:hover {
 }
 .we-do {
   padding: 3em 0em 4em 0em;
+}
+li.resp-tab-item.resp-tab-active {
+    color: #fff;
+    background: #FF3A71;
+    text-shadow: none;
+    /* color: white; */
+    border: 2px solid #FF3A71;
 }
 /*--we do end here--*/
 /*--main strip stear  here--*/
@@ -952,6 +962,81 @@ span.gall {
 .services-right p {
   font-size: 0.9em;
 }
+.resp-tabs-list {
+    padding: 1.5em 9px 1em;
+}
+.resp-tabs-list {
+    list-style: none;
+    padding: 2em 9px 1em;
+    margin: 0 auto;
+}
+.resp-tab-item {
+    font-size: 15px;
+}
+.resp-tab-active {
+    background: #FF3A71;
+    text-shadow: none;
+    color: white;
+    border: 2px solid #FF3A71;
+}
+.resp-tab-item {
+    color: #FF3A71;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 6px 25px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    text-transform: uppercase;
+    border: 2px solid #FF3A71;
+    margin: 0 0.5em 0;
+}    
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+	display: none;
+}
+.resp-content-active, .resp-accordion-active {
+   display: block;
+}
+.tab_img{
+	padding:1em 0em;
+}
+.img-top {	
+	position: relative;
+}
+.link-top{
+	position: absolute;
+	top: 0%;
+	text-align: center;
+	width: 88%;
+	background: rgba(255,58,113,0.6);
+    height: 100%;
+	padding: 5em 0 0;
+	display: none;
+}
+ i.link {
+	background: url(../images/img-sprite.png)no-repeat -103px -189px ;
+	width: 53px;
+	height: 53px;
+	display: inline-block;
+}
+.img-top:hover .link-top{
+	display: block;
+}
+.gallery-bottom {
+	margin-top: 1%;
+}    
 .copyright {
   padding: 2em 0em 0em 0em;
 }
@@ -1053,6 +1138,9 @@ span.gall {
 .main-strip a {
   width: 13%;
 }
+.resp-tabs-list {
+    padding: 1.5em 9px 10px;
+}    
 .food-info-grids{
   float: left;
   width: 33%;
@@ -1074,6 +1162,9 @@ span.gall {
     .gallery-bottom {
     margin-top: 0;
 }
+.tab_img {
+    padding: 10px 0em;
+}    
    .sap_tabs {
     clear: both;
 }
@@ -1089,13 +1180,13 @@ span.gall {
     font-size: 15px;
 }
 .resp-tab-active {
-    background: #F5AB95;
+    background: #FF3A71;
     text-shadow: none;
     color: #fff;
-    border: 2px solid #F5AB95;
+    border: 2px solid #FF3A71;
 }
 .resp-tab-item {
-    color: #F5AB95;
+    color: #FF3A71;
     font-size: 1em;
     cursor: pointer;
     padding: 6px 25px;
@@ -1110,7 +1201,7 @@ span.gall {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     text-transform: uppercase;
-    border: 2px solid #F5AB95;
+    border: 2px solid #FF3A71;
     margin: 0 0.5em 0;
 }
     
@@ -1481,6 +1572,11 @@ ul.grid-part {
 .main-strip {
   padding: 3em 0em 3em 0em;
 }
+.resp-tab-item {
+    font-size: 11px;
+    padding: 3px 15px;
+    margin: 0 0.2em 0;
+}
 .food-info-grids {
   float: none;
   width: 100%;
@@ -1535,6 +1631,13 @@ ul.grid-part {
 .feature h3 {
   margin: 0em 0em 0.5em 0em;
 }
+.resp-tabs-list {
+    padding: 1em 9px 5px;
+}
+
+    
+    
+    
 .footer-grid {
   float: none;
   width: 100%;
@@ -1729,6 +1832,13 @@ h3.typo1 {
 .main-strip {
   padding: 1em 0em 1em 0em;
 }
+.resp-tab-item {
+    font-size: 9px;
+    padding: 3px 7px;
+    margin: 0 1px 0;
+}
+    
+    
 .food-info-grids {
   padding: 0px;
 }

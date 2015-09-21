@@ -41,6 +41,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 new WOW().init();
 		</script>
 <!-- animated-css -->
+    
+    <script src="js/jquery.chocolat.js"></script>
+		<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+		<!--light-box-files-->
+		<script type="text/javascript" charset="utf-8">
+		$(function() {
+			$('.img-top a').Chocolat();
+		});
+		</script>
+		<!--script-->
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });	
+</script>
+    
+    
 </head>
 <body>
 <!--banner start here-->
@@ -122,7 +144,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<div class="recipes-main">
 			<div class="recipes-top wow bounceInLeft" data-wow-delay="0.5s">
-				<h3>Recipes</h3>
+				<h3>Gallery</h3>
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
 			</div>
 			<!--<div class="recipes-bottom">
@@ -200,46 +222,53 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
              <div class="clearfix"> </div>
              </div>-->
-            			<div class="gallery-bottom">
+<!--gallery-starts-->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<!--<div class="gallery-top heading">
+				<h2>Our Gallery</h2>
+				<p>Ut in velit ultrices, dapibus nibh non, tincidunt felis. Fusce commodo commodo eros ut elementum. Integer sed auctor turpis, ut scelerisque eros. Curabitur cursus iaculis mollis. Vestibulum quis sapien a ligula fringilla interdum quis in felis.</p>
+			</div>-->
+			<div class="gallery-bottom">
 				<div class="sap_tabs">
 						 <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 						  <ul class="resp-tabs-list">
 						  	  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
-							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Category</span></li>
-							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Category1</span></li>
-							 <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Category2</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Wedding</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Hairstyle</span></li>
+							 <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Modlers</span></li>
 							  <div class="clearfix"></div>
 						  </ul>				  	 
 							<div class="resp-tabs-container">
 							    <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
 									<div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/r1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/r1.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/w4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/w4.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top">
-					   		  			    <a href="images/r2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/r2.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/w7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/w7.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			   <a href="images/r3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/r3.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/w8.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/w8.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			     <a href="images/r4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			     	<img src="images/r4.jpg" class="img-responsive" alt=""/>
+					   		  			     <a href="images/w9.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			     	<img src="images/w9.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -249,32 +278,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							     </div>	
 							     <div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/r5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/r5.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/w11.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/w11.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			    <a href="images/r6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/r6.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/w14.jpg.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/w14.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			   <a href="images/r7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/r7.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/w17.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/w17.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			     <a href="images/r8.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			     	<img src="images/r8.jpg" class="img-responsive" alt=""/>
+					   		  			     <a href="images/h12.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			     	<img src="images/h12.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -284,32 +313,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							     </div>	
 							     <div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/r9.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/r9.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/h13.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/h13.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			    <a href="images/r1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/r1.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/h17.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/h17.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			   <a href="images/r2.jpg" rel="title" class="b-link2-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/r2.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/h19.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/h19.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			     <a href="images/r3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			     	<img src="images/r3.jpg" class="img-responsive" alt=""/>
+					   		  			     <a href="images/h20.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			     	<img src="images/h20.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -322,32 +351,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								
 							     <div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-3.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/w4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/w4.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			    <a href="images/g-1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/g-1.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/w7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/w7.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-5.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/w8.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/w8.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			     <a href="images/g-2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			     	<img src="images/g-2.jpg" class="img-responsive" alt=""/>
+					   		  			     <a href="images/w9.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			     	<img src="images/w9.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -357,24 +386,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							     </div>	
 							     	<div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-7.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/w11.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/w11.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			    <a href="images/g-6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/g-6.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/w14.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/w14.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-9.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-9.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/w17.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/w17.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -388,32 +417,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								
 									  <div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-11.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-11.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/h12.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/h12.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			    <a href="images/g-8.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/g-8.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/h11.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/h11.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-12.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-12.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/h22.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/h22.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 									<div class="col-md-3 img-top ">
-					   		  			    <a href="images/g-10.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/g-10.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/h23.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/h23.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -423,16 +452,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							     </div>	
 							     	<div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-7.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/h20.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/h21.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			    <a href="images/g-3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/g-3.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/h17.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/h17.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -445,32 +474,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						   <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
 						   	<div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-8.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-8.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/ml22.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/ml22.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			    <a href="images/g-6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/g-6.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/ml18.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/ml18.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-4.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/ml19.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/ml19.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			     <a href="images/g-7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			     	<img src="images/g-7.jpg" class="img-responsive" alt=""/>
+					   		  			     <a href="images/ml21.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			     	<img src="images/ml21.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -480,32 +509,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							     </div>	
 							     <div class="tab_img">
 									  <div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-10.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-10.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/ml15.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/ml15.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			    <a href="images/g-4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			    	<img src="images/g-4.jpg" class="img-responsive" alt=""/>
+					   		  			    <a href="images/ml7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			    	<img src="images/ml7.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			   <a href="images/g-3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			   	<img src="images/g-3.jpg" class="img-responsive" alt=""/>
+					   		  			   <a href="images/ml10.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			   	<img src="images/ml10.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
 					   		  			   </a>
 										</div>
 										<div class="col-md-3 img-top ">
-					   		  			     <a href="images/g-9.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-					   		  			     	<img src="images/g-9.jpg" class="img-responsive" alt=""/>
+					   		  			     <a href="images/ml11.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+					   		  			     	<img src="images/ml11.jpg" class="img-responsive" alt=""/>
 												 <div class="link-top">
 												 <i class="link"> </i>
 												 </div>
@@ -518,6 +547,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 			</div>
+		</div>
+	</div>
+	<!--gallery-ends-->
 		</div>
 	</div>
 </div>
